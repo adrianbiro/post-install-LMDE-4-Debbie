@@ -37,6 +37,7 @@ gsettings set org.cinnamon enabled-applets
 # Adding a custom set of wallpapers.
 # In order to add wallpapers to Github, one needs to put them in the archive. Here Is how to do so. To make archive in the current directory $ tar -czvf My_Backgrounds.tar.gz My_Backgrounds
 sudo tar -xzvf My_Backgrounds.tar.gz -C /usr/share/backgrounds
+gsettings set org.gnome.desktop.background picture-uri "file:///usr/share/backgrounds/My_Backgrounds/jbloor_kyoto.jpg"
 # Remove apt packages  
 sudo apt remove -y firefox
 sudo apt purge -y --autoremove libreoffice-common
