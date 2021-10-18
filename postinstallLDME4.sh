@@ -39,7 +39,7 @@ gsettings set org.cinnamon enabled-applets
 sudo tar -xzvf My_Backgrounds.tar.gz -C /usr/share/backgrounds
 gsettings set org.gnome.desktop.background picture-uri "file:///usr/share/backgrounds/My_Backgrounds/jbloor_kyoto.jpg"
 # Remove apt packages  
-sudo apt remove -y firefox
+#sudo apt remove -y firefox
 sudo apt purge -y --autoremove libreoffice-common
 echo "#################################################################"
 echo "###################    Packages removed   #######################"
@@ -47,10 +47,10 @@ echo "#################################################################"
 # Install apt packages
 sudo apt install -y git
 sudo apt install -y meld
-sudo apt install -y virtualbox
+#sudo apt install -y virtualbox
 sudo apt install -y htop
 sudo apt install -y vim
-sudo apt install -y firefox-esr
+#sudo apt install -y firefox-esr
 # Clipboard manager
 sudo apt install -y diodon
 # Signal
@@ -68,14 +68,15 @@ echo "#################################################################"
 # Re-enabling Snap
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install -y snapd
-sudo snap install -y authy
+sudo snap install authy
+sudo snap install bitwarden
 # Flatpak packages 
 flatpak install -y com.calibre_ebook.calibre
 flatpak install -y org.libreoffice.LibreOffice
 #flatpak install -y org.signal.Signal
-flatpak install -y bitwarden
-flatpak install -y com.tutanota.Tutanota
-flatpak install -y us.zoom.Zoom
+#flatpak install -y bitwarden
+#flatpak install -y com.tutanota.Tutanota
+#flatpak install -y us.zoom.Zoom
 
 
 echo "#################################################################"
