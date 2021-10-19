@@ -68,10 +68,10 @@ echo "#################################################################"
 echo "################    Instalation almost Done   ###################"
 echo "#################################################################"
 # Re-enabling Snap
-sudo rm /etc/apt/preferences.d/nosnap.pref
-sudo apt install -y snapd
-sudo snap install authy
-sudo snap install bitwarden
+#sudo rm /etc/apt/preferences.d/nosnap.pref
+#sudo apt install -y snapd
+#sudo snap install authy
+#sudo snap install bitwarden
 # Flatpak packages 
 flatpak install -y com.calibre_ebook.calibre
 flatpak install -y org.libreoffice.LibreOffice
