@@ -36,8 +36,8 @@ gsettings set org.cinnamon enabled-applets
 #
 # Adding a custom set of wallpapers.
 # In order to add wallpapers to Github, one needs to put them in the archive. Here Is how to do so. To make archive in the current directory $ tar -czvf My_Backgrounds.tar.gz My_Backgrounds
-sudo tar -xzvf My_Backgrounds.tar.gz -C /usr/share/backgrounds
-gsettings set org.gnome.desktop.background picture-uri "file:///usr/share/backgrounds/My_Backgrounds/jbloor_kyoto.jpg"
+sudo tar -xzvf My_Backgrounds.tar.gz -C /home/adrian/.scripts
+gsettings set org.gnome.desktop.background picture-uri "file:///home/adrian/.scripts/My_Backgrounds/jbloor_kyoto.jpg"
 # Remove apt packages  
 #sudo apt remove -y firefox
 sudo apt purge -y --autoremove libreoffice-common
@@ -49,7 +49,7 @@ sudo apt install -y git
 sudo apt install -y meld
 sudo apt install -y chromium
 sudo apt install -y gimp
-#sudo apt install -y virtualbox
+sudo apt install -y gnome-boxes
 sudo apt install -y htop
 sudo apt install -y vim
 #sudo apt install -y firefox-esr
@@ -68,6 +68,7 @@ echo "#################################################################"
 echo "################    Instalation almost Done   ###################"
 echo "#################################################################"
 # Re-enabling Snap
+# If snap apps don't appear in the menu, copy the app from /var/lib/snapd/applications/ to ~/.local/share/applications/.
 #sudo rm /etc/apt/preferences.d/nosnap.pref
 #sudo apt install -y snapd
 #sudo snap install authy
