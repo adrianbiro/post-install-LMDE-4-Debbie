@@ -52,7 +52,7 @@ sudo apt install -y gimp
 sudo apt install -y gnome-boxes
 sudo apt install -y htop
 sudo apt install -y vim
-# OCR eng, ger, cz "$ tesseract file_name.jpg deu"
+# OCR eng, ger, cz "$ tesseract file_name.jpg new_file_name"
 sudo apt install -y tesseract-ocr-eng tesseract-ocr-deu tesseract-ocr-ces
 #sudo apt install -y firefox-esr
 # Clipboard manager
