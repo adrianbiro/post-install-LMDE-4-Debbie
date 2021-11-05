@@ -49,6 +49,7 @@ sudo apt install -y git
 sudo apt install -y meld
 sudo apt install -y chromium
 sudo apt install -y gimp
+sudo apt install -y gimp-help-en
 sudo apt install -y gnome-boxes
 sudo apt install -y htop
 sudo apt install -y vim
