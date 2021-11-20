@@ -23,7 +23,7 @@ sudo timedatectl set-timezone Europe/Bratislava
 #sudo timedatectl set-timezone Europe/Prague
 #sudo timedatectl set-timezone Europe/Vienna
 # Adding keyboard layouts to see another use $ "cat /usr/share/X11/xkb/rules/xorg.lst | less" fr for French, es for Spanish
-setxkbmap -option grp:switch,grp:alt_shift_toggle us,sk
+setxkbmap -option grp:switch,grp:win_space_toggle us,sk
 # Configuring Theme settings.
 gsettings set org.cinnamon.theme name "Mint-Y-Red"
 gsettings set org.cinnamon.desktop.interface gtk-theme "Mint-Y-Red"
