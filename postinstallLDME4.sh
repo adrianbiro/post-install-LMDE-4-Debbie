@@ -77,11 +77,10 @@ echo "#################################################################"
 #sudo snap install authy
 #sudo snap install bitwarden
 # Flatpak packages 
-flatpak install -y com.calibre_ebook.calibre
+#flatpak install -y com.calibre_ebook.calibre   #use tarball enstead
 flatpak install -y org.libreoffice.LibreOffice
-#flatpak install -y org.signal.Signal
 #flatpak install -y bitwarden
-#flatpak install -y com.tutanota.Tutanota
+
 #flatpak install -y us.zoom.Zoom
 
 
