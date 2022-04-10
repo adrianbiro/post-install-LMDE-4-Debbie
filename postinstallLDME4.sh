@@ -38,27 +38,19 @@ gsettings set org.cinnamon enabled-applets
 # In order to add wallpapers to Github, one needs to put them in the archive. Here Is how to do so. To make archive in the current directory $ tar -czvf My_Backgrounds.tar.gz My_Backgrounds
 sudo tar -xzvf My_Backgrounds.tar.gz -C /home/adrian/.scripts
 gsettings set org.gnome.desktop.background picture-uri "file:///home/adrian/.scripts/My_Backgrounds/jbloor_kyoto.jpg"
-# Remove apt packages  
-#sudo apt remove -y firefox
-sudo apt purge -y --autoremove libreoffice-common
-echo "#################################################################"
-echo "###################    Packages removed   #######################"
-echo "#################################################################"
+
 # Install apt packages
 sudo apt install -y git
 sudo apt install -y meld
 sudo apt install -y chromium
-sudo apt install -y gimp
-sudo apt install -y gimp-help-en
-sudo apt install -y gnome-boxes
 sudo apt install -y htop
 sudo apt install -y vim
 # OCR eng, ger, cz "$ tesseract file_name.jpg new_file_name"
 sudo apt install -y tesseract-ocr-eng tesseract-ocr-deu tesseract-ocr-ces
-#sudo apt install -y firefox-esr
 # Clipboard manager
 sudo apt install -y diodon
-# Signal
+
+## Signal
 # Official public software signing key
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
 cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
@@ -67,21 +59,15 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
   sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 # Update package database and install signal
 sudo apt update && sudo apt install -y signal-desktop
+
 echo "#################################################################"
 echo "################    Instalation almost Done   ###################"
 echo "#################################################################"
-# Re-enabling Snap
-# If snap apps don't appear in the menu, copy the app from /var/lib/snapd/applications/ to ~/.local/share/applications/.
-#sudo rm /etc/apt/preferences.d/nosnap.pref
-#sudo apt install -y snapd
-#sudo snap install authy
-#sudo snap install bitwarden
-# Flatpak packages 
-#flatpak install -y com.calibre_ebook.calibre   #use tarball enstead
-flatpak install -y org.libreoffice.LibreOffice
-#flatpak install -y bitwarden
 
-#flatpak install -y us.zoom.Zoom
+# Flatpak packages 
+flatpak install -y com.calibre_ebook.calibre   #use tarball enstead
+flatpak install -y bitwarden
+
 
 
 echo "#################################################################"
